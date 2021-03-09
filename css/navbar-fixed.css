@@ -1,0 +1,86 @@
+html, body {
+  height: 100%;
+}
+
+nav li a:before{
+	position:absolute;
+	bottom:-18px;
+	height:20px;
+	background-color:orange;
+	content:"";
+	left:0;
+	width:100%;
+	transform:scaley(0);
+	transform-origin:top;
+	transition:all 0.5s ease;
+}
+nav li:nth-of-type(1) a:before{
+	background-color:#f4bf00;
+}
+nav li:nth-of-type(2) a:before{
+	background-color:#f7941d;
+}
+
+nav li:nth-of-type(3) a:before{
+	background-color:#f26522;
+}
+
+nav li:nth-of-type(4) a:before{
+	background-color:#ed1c24;
+}
+
+nav li:nth-of-type(5) a:before{
+	background-color:#e10337;
+}
+
+nav li:nth-of-type(6) a:before{
+	background-color:#b90162;
+}
+
+nav li:nth-of-type(7) a:before{
+	background-color:#873e95;
+}
+nav li:nth-of-type(8) a:before{
+	background-color:#3c70b4;
+}
+
+nav li a.active{
+  color:white;
+  background-color:transparent;
+  position:relative;
+}
+
+
+
+nav li a.active:before{
+	transform:scaley(1);
+}
+
+
+
+
+
+
+
+
+nav .navbar-collapse.collapsing ul,
+nav .navbar-collapse.show ul {
+  margin-top: 3rem;
+}
+
+nav .navbar-collapse.collapsing li a,
+nav .navbar-collapse.show li a  {
+  padding: 0.5rem;
+}
+
+nav .navbar-collapse.show li a.active  {
+  margin: 0;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.bg-primary {
+  color: #fff;
+}
